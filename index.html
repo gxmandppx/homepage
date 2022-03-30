@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta content="zh-CN" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="http://www.google.cn/favicon.ico">
+    <title>主页</title>
+</head>
+<body>
+<div class="content">
+    <br />
+    <div class="search_part">
+        <img class="smaller" src="img/google.png"></img>
+        <br />
+        <form onsubmit="return search()" class="search_bar">
+            <span>
+                <input class="search" type="text" value="" autocomplete="off" id="search_input" >
+                <input type="submit" class="search_submit" value="搜索" >
+            </span>
+        </form>
+    </div>
+    <br />
+    <div class="box">
+        <a href="https://www.senfun.net/"></a>
+        <p class="frame"><img class="icon" src="https://www.senfun.net/upload/dyxscms/20211201-1/41c4d0a159b80ec48e50a26de1374041.gif" ></p>
+        <p class="url">森之屋动漫</p>
+    </div>
+    <div class="box">
+        <a href="https://translate.google.cn/"></a>
+        <p class="frame"><img class="icon" src="https://ssl.gstatic.com/translate/favicon.ico" ></p>
+        <p class="url">谷歌翻译</p>
+    </div>
+    <div class="box">
+        <a href="https://www.huya.com/"></a>
+        <p class="frame"><img class="icon" src="https://www.huya.com/favicon.ico" ></p>
+        <p class="url">虎牙</p>
+    </div>
+    <div class="box">
+        <a href="https://www.douyin.com/"></a>
+        <p class="frame"><img class="icon" src="https://lf1-cdn-tos.bytegoofy.com/goofy/ies/douyin_web/public/favicon.ico" ></p>
+        <p class="url">抖音</p>
+    </div>
+    
+    <div class="box">
+        <a href="https://github.com"></a>
+        <p class="frame"><img class="icon" src="https://github.githubassets.com/favicons/favicon.png" ></p>
+        <p class="url">GitHub</p>
+    </div>
+    
+    <div class="box">
+        <a href="https://www.bilibili.com/"></a>
+        <p class="frame"><img class="icon" src="https://www.bilibili.com/favicon.ico?v=1" ></p>
+        <p class="url">哔哩哔哩</p>
+    </div>
+    <div class="box">
+        <a href="https://www.ghxi.com/"></a>
+        <p class="frame"><img class="icon" src="https://www.ghxi.com/favicon.ico" ></p>
+        <p class="url">果核剥壳</p>
+    </div>
+    <div class="box">
+        <a href="https://www.ithome.com/"></a>
+        <p class="frame"><img class="icon" src="https://www.ithome.com/favicon.ico" ></p>
+        <p class="url">IT之家</p>
+    </div>
+    <br />
+    <div class="box">
+        <a href="https://bukaivip1.com/"></a>
+        <p class="frame"><img class="icon" src="https://bukaivip1.com/template/okpc/statics/img/favicon.ico" ></p>
+        <p class="url">不开vip</p>
+    </div>
+        <div class="box">
+        <a href="https://www.google.com"></a>
+        <p class="frame"><img class="icon" src="http://www.google.cn/favicon.ico"></p>
+        <p class="url">Google</p>
+    </div>
+    <div class="box">
+        <a href="https://dsxys.com/"></a>
+        <p class="frame"><img class="icon" src="https://dsxys.com/favicon.ico" ></p>
+        <p class="url">大师兄影视</p>
+    </div>
+    <div class="box">
+        <a href="https://admin.microsoft.com/AdminPortal/Home"></a>
+        <p class="frame"><img class="icon" src="https://prod.msocdn.com/2022.3.21.2/zh-cn/images/favicon_metro.ico" ></p>
+        <p class="url">E5账号管理</p>
+    </div>
+    <div class="box">
+        <a href="https://www.yuque.com/"></a>
+        <p class="frame"><img class="icon" src="https://gw.alipayobjects.com/mdn/prod_resou/afts/img/A*CUIoT4xopNYAAAAAAAAAAABkARQnAQ" ></p>
+        <p class="url">语雀</p>
+    </div>
+    <div class="box">
+        <a href="https://vgms.fanyu.com/"></a>
+        <p class="frame"><img class="icon" src="https://vgms.fanyu.com/favicon.ico" ></p>
+        <p class="url">维普毕业论文</p>
+    </div>
+    <div class="box">
+        <a href="https://ghproxy.com/"></a>
+        <p class="frame"><img class="icon" src="https://github.githubassets.com/favicons/favicon.png" ></p>
+        <p class="url">github加速下载</p>
+    </div>
+</div>
+<script type="text/javascript">
+    function search(){
+        if(document.getElementById("search_input").value != ""){
+            window.location.href = "https://cn.bing.com/search?q=" + document.getElementById("search_input").value;
+            document.getElementById("search_input").value = "";
+        }
+        return false;
+    }
+    /*主页鼠标悬停右键失效*/
+    document.oncontextmenu=new Function("event.returnValue=false");
+    document.onselectstart=new Function("event.returnValue=false");
+</script>
+</body>
+</html>
